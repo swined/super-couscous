@@ -2,7 +2,7 @@ FROM ubuntu:15.10
 MAINTAINER swined@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y xrdp xvfb lxde git vim mc 
+RUN apt-get update && apt-get install -y xrdp xvfb lxde git vim mc thunderbird lxtask
 
 RUN ln -fs /usr/bin/Xvfb /etc/X11/X
 
