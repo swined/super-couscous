@@ -2,7 +2,8 @@ FROM ubuntu:15.10
 MAINTAINER swined@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
-RUN apt-get update && apt-get install -y xrdp xvfb lxde git vim mc lxtask && apt-get clean
+RUN echo "deb http://dl.google.com/linux/chrome/deb/ stable main" > /etc/apt/sources.list.d/chrome
+RUN apt-get update && apt-get install -y xrdp xvfb lxde git vim mc lxtask google-chrome-stable && apt-get clean
 
 RUN ln -fs /usr/bin/Xvfb /etc/X11/X
 
