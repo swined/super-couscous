@@ -1,4 +1,4 @@
-FROM ubuntu:15.10
+FROM ubuntu:16.10
 MAINTAINER swined@gmail.com
 
 ENV DEBIAN_FRONTEND noninteractive
